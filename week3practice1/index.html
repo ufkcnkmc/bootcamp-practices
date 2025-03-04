@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Öğrenci Listesi</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Öğrenci Listesi</h1>
+
+      <form id="studentForm">
+        <input type="text" id="name" placeholder="Öğrenci İsmi" required />
+        <input type="text" id="class" placeholder="Sınıf" required />
+        <input
+          type="text"
+          id="favoriteCourse"
+          placeholder="Favori Ders"
+          required
+        />
+        <button type="submit">Öğrenci Ekle</button>
+      </form>
+
+      <table id="studentTable">
+        <thead>
+          <tr>
+            <th>İsim</th>
+            <th>Sınıf</th>
+            <th>Favori Ders</th>
+            <th>İşlem</th>
+          </tr>
+        </thead>
+        <tbody id="studentList"></tbody>
+      </table>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
